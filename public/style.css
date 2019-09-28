@@ -38,10 +38,27 @@ body {
 }
 
 @font-face {
-    font-family: "heading-primary";
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    src: local("gilroy"), url("fonts/EuclidTriangle-Semibold.woff2") format("woff2");
+    font-family: heading-primary;
+    weight: 400;
+    src: url("fonts/gilroy-regular.woff") format("woff2");
+  }
+  
+  @font-face {
+    font-family: heading-primary;
+    weight: 300;
+    src: url("fonts/Gilroy-light.woff2") format("woff2");
+  }
+  
+  @font-face {
+    font-family: heading-primary-2;
+    weight: 600;
+    src: url("fonts/GilroySemiBold.woff2") format("woff2");
+
+  }
+  @font-face {
+    font-family: heading-primary;
+    weight: 800;
+    src: url("fonts/gilroy-bold.woff2") format("woff2");
 }
 
 @font-face {
@@ -72,7 +89,7 @@ body {
     font-size: 4vw;
     font-family: heading-primary;
     color: white;
-    font-weight: normal;
+    font-weight: 600;
 }
 
 .hero a {
