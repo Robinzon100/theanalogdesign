@@ -1,0 +1,153 @@
+html {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* -webkit-text-stroke: 0.45px;
+
+    -webkit-text-stroke: 0.0px rgba(0, 0, 0, 0.1);
+
+    text-shadow: #fff 0px 1px 1px; */
+}
+
+@-moz-document url-prefix() {
+    html {
+        font-weight: normal;
+    }
+}
+
+@-moz-document url-prefix() {
+    body {
+        font-weight: lighter !important;
+    }
+}
+
+body,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-position: center;
+    background-size: cover;
+    background-image: url("img/hero_section.png");
+}
+
+@font-face {
+    font-family: "heading-primary";
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    src: local("gilroy"), url("fonts/EuclidTriangle-Semibold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: text-primary;
+    font-weight: normal;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    src: url(fonts/LexendDeca-Regular.ttf);
+}
+
+.hero {
+    height: 100vh;
+    width: 90%;
+    max-width: 140rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.hero_content {
+    text-align: left;
+    width: 60%;
+}
+
+.hero h1 {
+    font-size: 4vw;
+    font-family: heading-primary;
+    color: white;
+    font-weight: normal;
+}
+
+.hero a {
+    margin-top: 3rem;
+    font-size: 2vw;
+    font-family: text-primary;
+    color: white;
+    padding: 0.8rem;
+    background: #0484fb;
+    text-decoration: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-content: center;
+    justify-content: center;
+}
+
+.hero a img {
+    width: 14%;
+    height: auto;
+}
+
+.hero a p {
+    align-self: center;
+}
+
+/* style.css | http://localhost:3000/style.css */
+
+.hero h1 {
+    font-weight: 100;
+}
+
+.hero a img {
+    filter: drop-shadow(0px 10px 16px #033d748e);
+}
+
+/* Element | http://localhost:3000/ */
+
+.hero_content > a:nth-child(3) > p:nth-child(2) {
+    transform: translateY(5%);
+    margin-left: 2rem;
+}
+
+@media only screen and (max-width: 800px) {
+    /* style.css | http://localhost:3000/style.css */
+
+    .hero h1 {
+        /* font-size: 4vw; */
+        font-size: 8vw;
+    }
+
+    .hero_content {
+        /* text-align: left; */
+        /* width: 60%; */
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .hero a {
+        /* margin-top: 3rem; */
+        marin: 2rem auto;
+        justify-self: center;
+        width: initial;
+        
+        /* style.css | http://localhost:3000/style.css */
+
+        font-size: 5vw;
+    }
+
+    /* Element | http://localhost:3000/ */
+
+    .hero_content {
+        display: flex;
+        flex-direction: column;
+    }
+}
