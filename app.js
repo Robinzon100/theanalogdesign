@@ -16,6 +16,6 @@ app.use("/", (req, res, next) =>{
 
 let post = process.env.PORT || 3000
 
-app.listen(3000, () => {
+app.listen(post, () => {
     console.log('App listening on port 3000!');
 });
